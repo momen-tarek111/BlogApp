@@ -25,8 +25,8 @@ export function registerUser(user){
             const {data}= await request.post("/api/auth/register",user)
             dispatch(authActions.register(data.message));
         } catch (error) {
-            toast.error(error.response.data.message )
-            console.log(error)
+            console.log(error.response)
+            toast.error(error.response.data.message)
         }
     }
 }
