@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const request=axios.create({
-    baseURL:"https://apiblogapp-production.up.railway.app"
+    baseURL:"https://api-blog-app-two.vercel.app"
 })
 
 export default request;
